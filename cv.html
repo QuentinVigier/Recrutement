@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Quentin Vigier</title>
+    <link rel="stylesheet" href="./assets/cv.css">
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <h1 class="col-10"> Quentin Vigier</h1>
+            <div id="contact" class="col-2">
+                +336 34 20 59 09<br>
+                39 Avenue de Paris<br>
+                95600 Eaubonne<br>
+                quentin.vigier12@gmail.com
+            </div>
+        </header>
+        <div id="competences">
+            <legend>COMPETENCES</legend>
+            <ul class="col-4">
+                <li>Relation Client</li>
+                <li>Bonne capacité d'écoute</li>
+                <li>Travail d'équipe</li>
+            </ul>
+            <ul style="list-style-type:none;" class="col-4">
+                <li>Organisé</li>
+                <li>Autonome</li>
+                <li>Rigoureux</li>
+            </ul>
+            <ol class="col-4">
+                <li>Français</li>
+                <li>Anglais</li>
+                <li>Espagnol</li>
+            </ol>
+        </div>
+        <div id="formation" class="col-12">
+            <legend>FORMATION</legend>
+            <div id="formation1" class="col-12">
+                <p>2016-2020<br>
+                    Levallois, France
+                </p>
+                <p>
+                <h3>Master Managemet des Systèmes d'Informations Parcours Entrepreunarial Track</h3>
+                <h4>ISC Paris, Business School</h4>
+                </p>
+            </div>
+
+            <div id="formation2" class="col-12">
+                <p>2014-2016<br>
+                    Sarcelles, France
+                </p>
+                <p>
+                <h3>Classe Préparatoire aux Grandes Ecoles de Commerce</h3>
+                <h4>CPGE, Lycée Jean-Jacques Rousseau</h4>
+                </p>
+            </div>
+            <div id="formation3" class="col-12">
+                <p>2014<br>
+                    Eaubonne, France
+                </p>
+                <p>
+                <h3>Baccalauréat Economique et Social</h3>
+                <h4>Lycée Louis Armand</h4>
+                </p>
+            </div>
+        </div>
+
+        <div id="exppro">
+            <legend>EXPERIENCE PROFESSIONNELLE</legend>
+            <div id="exppro1" class="col-12">
+                <div>1 an - 2022<br>
+                    Soisy, France
+                </div>
+                <div class="liste">
+                    <h5>CDD : Employé Polyvalent</h5>
+                    <ul>
+                        <li>Relation clients</li>
+                        <li>Gestion de commande</li>
+                        <li>Mise en rayon</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="exppro2" class="col-12">
+                <div class="col-4">4 mois - 2019<br>
+                    Paris, France
+                </div>
+                <div class="liste" class="col-4">
+                    <h5>Stage : Business Developper</h5>
+                    <ul>
+                        <li>Gestion de base de données clients</li>
+                        <li>Démarchage commercial et phoning</li>
+                        <li>Suivi de communication et hestion des réseaux sociaux</li>
+                    </ul>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div id="exppro3" class="col-12">
+                <div>1 an - 2018<br>
+                    Levallois, France
+                </div>
+                <div class="liste">
+                    <h5>Expérience associative : Président(Entreprise Etudiente de l'ISC Paris : EVO'ISC)</h5>
+                    <ul>
+                        <li>Management d'équipe (20 personnes)</li>
+                        <li>Gestion de projet</li>
+                        <li>Animation et rédaction trame d'une conférence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <fieldset>
+            <legend>FORMULAIRE DE CONTACT : si vous êtes interéssé merci de me contacter via ce formulaire.</legend>
+
+            <form action="formulairerecrutement.php" method="post" class="couleur">
+                <br>
+
+                <label for="nom">Nom : </label>
+                <input type="text" name="nom" id="nom">
+                <label for="prenom">Prénom : </label>
+                <input type="text" name="prenom" id="prenom">
+                <br>
+
+                <label for="mail">Email : </label>
+                <input type="email" name="mail" id="mail">
+                <br>
+
+                <label for="entreprise">Votre Entreprise : </label>
+                <input type="text" name="entreprise" id="entreprise">
+                <br>
+
+                <label for="tech">Quelle est la technologie principale sur laquelle vous travaillez ?</label>
+                <input list="technos" id="tech" name="tech">
+                <datalist id="technos">
+                    <option value="Java Script">
+                    <option value="PHP">
+                    <option value="Python">
+                    <option value="HTML/CSS">
+                    <option value="Ruby">
+                </datalist>
+
+                <label for="autre">Autre : </label>
+                <input type="text" name="autre" id="autre">
+                <br>
+
+                <label for="date">Date et heure de rdv téléphonique : </label>
+                <input type="date" name="date" id="date">
+                <label for="heure"></label>
+                <input type="text" name="heure" id="heure">
+                <br>
+
+                <label for="tel">Votre numéro de téléphone : </label>
+                <input type="number" name="tel" id="tel">
+                <input type="submit" value="Envoyer"/>
+            </form>
+        </fieldset>
+
+    </div>
+</body>
+
+</html>
