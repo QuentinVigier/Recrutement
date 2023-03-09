@@ -4,68 +4,119 @@ body{
 #page{
     width: 80%;
     margin: 0 auto;
+    background-color: lightgray;
 }
 header{
-    background-color: lightslategrey;
+    background-color: lightblue;
     height: 200px;
     width: 100%;
     display: flex;
     text-align: center;
-}
-#competences,#formation{
-    display: flex;
-    border-top: 2px solid darkblue;
-}
-#formation,.liste{
-    display: flex;
-    flex-direction: column;
-}
-#formation1,#formation2,#formation3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-/* #exppro1,#exppro2,#exppro3{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-} */
-/* #exppro{
-display: flex;
-flex-direction: row; 
-}*/
-/* For mobile phones: */
-[class*="col-"] {
+    border-bottom: 2px solid #fff;
+    height: 120px;
     width: 100%;
-  }
-  
-  @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
+    padding: 20px 0px;
+    box-shadow: 0px 0px 15px #333;
+}
+header h1{
+    color: black;
+    font-size: 3em;
+    width: 90%;
+    margin: 0 auto;
+}
+h3{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* Section générale */
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+section > div{
+    width: 90%;
+}
+
+
+/* Section experience et formation */
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+}
+.exp-info{
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+.exp h3{
+    font-size:  1.2em;
+}
+.exp h4{
+    font-size:  1em;
+    font-weight: normal;
+}
+
+
+/* Formulaire */
+legend{
+    color: dodgerblue;
+    font-size: 2em;
+}
+fieldset{
+    background-color: #fffccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    header h1{
+        width: 80%;
+    }
+    .exp-logo{
+        flex: 0 0 10%;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+#comp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+fieldset{
+    background-color: #fffccc;
+    text-align: center;
+}
+#contact{
+    text-align: right;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+}
+
+}

@@ -10,7 +10,7 @@
     $heure = htmlspecialchars($_POST["heure"]);
     $tel = htmlspecialchars($_POST["tel"]);
 
-	echo 'Bonjour ' . $nom . ' !';
+	echo 'Au pliaisir de vous parler pour notre entreteien Mr ' . $nom . ' !';
 
 	// 1 : on ouvre le fichier
 	$monfichier = fopen('donneesformulaire.txt', 'a+');
