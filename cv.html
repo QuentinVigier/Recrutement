@@ -21,8 +21,7 @@
                     +336 34 20 59 09<br>
                 </div>
                 <div class="fa-solid fa-house">
-                    39 Avenue de Paris
-                    95600 Eaubonne<br>
+                    39 Avenue de Paris 95600 Eaubonne<br>
                 </div>
                 <div class="fa-solid fa-house">
                     quentin.vigier12@gmail.com
@@ -147,7 +146,7 @@
                 Actuellement à la recherche d'un stage : si vous êtes interéssé merci de me contacter via ce formulaire
             </p>
 
-            <form action="formulairerecrutement.php" method="post" class="couleur">
+            <form action="formulairerecrutement.php" method="post" class="couleur" enctype="multipart/form-data">
                 <br>
 
                 <label for="nom">Nom : </label>
@@ -186,8 +185,12 @@
                 <br>
 
                 <label for="tel">Votre numéro de téléphone : </label>
-                <input type="number" name="tel" id="tel">
+                <input type="number" name="tel" id="tel"><br>
+
+                <label for="fileToUpload">M'envoyer un fichier : </label>
+                <input type="file" name="fileToUpload" id="fileToUpload">
                 <br></br>
+
                 <input type="submit" value="Envoyer" />
             </form>
         </fieldset>
